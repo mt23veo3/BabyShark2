@@ -1,0 +1,60 @@
+cat > data_perf_sanity.patch <<'PATCH'
+--- a/data.py
++++ b/data.py
+@@
+ import asyncio, time
+@@
+-class DataFeed:
++class DataFeed:
+     def __init__(self, exchange, cfg, logger):
+         self.ex = exchange
+         self.cfg = cfg
+         self.log = logger
+         self.last_since = {}   # (symbol, tf) -> ms
+@@
+-    async def fetch_all_timeframes(self, symbol: str) -> dict:
+-        out = {}
+-        # sequential old fetch ...
+-        for tf in ["M5","M15","H1","H4","D1"]:
+-            out[tf] = await self._fetch_tf(symbol, tf)
+-        return out
++    async def fetch_all_timeframes(self, symbol: str) -> dict:
++        # --- Parallel fetch with incremental since ---
++        tfs = ["M5","M15","H1","H4","D1"]
++        res = await asyncio.gather(*[self._fetch_tf(symbol, tf) for tf in tfs], return_exceptions=True)
++        out = {}
++        for tf, r in zip(tfs, res):
++            if isinstance(r, Exception):
++                self.log.error(f"[DATA][{symbol}][{tf}] fetch error: {r}")
++                continue
++            out[tf] = r
++        return out
+@@
+-    async def _fetch_tf(self, symbol: str, tf: str) -> dict:
+-        # old fetch here
++    async def _fetch_tf(self, symbol: str, tf: str) -> dict:
++        # Incremental fetch with since & sanity
+         lim = int(self.cfg.get("data",{}).get("limit",{}).get(tf, 200))
+         use_inc = bool(self.cfg.get("data",{}).get("incremental", True))
+         ms_now = int(time.time()*1000)
+         since = None
+         key = f"{symbol}:{tf}"
+         if use_inc and key in self.last_since:
+             since = self.last_since[key]
+-        ohlcv = await self.ex.fetch_ohlcv(symbol, tf, since=since, limit=lim)
++        ohlcv = await self.ex.fetch_ohlcv(symbol, tf, since=since, limit=lim)
+         if ohlcv and len(ohlcv) > 0:
+             self.last_since[key] = max(ohlcv[-1][0] - 1, ms_now - 3600*1000)
+-        df = to_dataframe(ohlcv)  # existing helper
++        df = to_dataframe(ohlcv)  # existing helper
++
++        # --- Sanity check ---
++        if len(df) and self.cfg.get("data",{}).get("sanity",{}).get("reject_zero_close", True):
++            df = df[df["close"] > 0]
++        if len(df) and self.cfg.get("data",{}).get("sanity",{}).get("reject_high_lt_low", True):
++            df = df[df["high"] >= df["low"]]
+         return {
+            "df": df
+            # keep other fields as your indicators step will fill them
+         }
+PATCH

@@ -1,0 +1,49 @@
+cat > signal_manager_vfi.patch <<'PATCH'
+--- a/signal_manager.py
++++ b/signal_manager.py
+@@
+ import csv, os, time
+@@
+ class SignalManager:
+@@
+-    def write_score(self, result: dict, tf: str, total_score: float):
++    def write_score(self, result: dict, tf: str, total_score: float, ages: dict = None, exit_reason: str = ""):
+         path = self.cfg.get("logging", {}).get("scores_path", "scores_log.csv")
+         ensure_header = not os.path.exists(path)
+         with open(path, "a", newline="") as f:
+             w = csv.writer(f)
+             if ensure_header:
+-                w.writerow(["timestamp","symbol","tf","score_total"])
+-            w.writerow([int(time.time()), result["symbol"], tf, round(total_score,4)])
++                w.writerow(["timestamp","symbol","tf","score_total",
++                            "score_flow","vfi_score_long","vfi_score_short",
++                            "h1_age_sec","m15_age_sec","exit_reason"])
++            vfi_scores = result.get("vfi_scores", {}) or {}
++            age_h1 = (ages or {}).get("h1_age_sec", "")
++            age_m15 = (ages or {}).get("m15_age_sec", "")
++            w.writerow([
++                int(time.time()), result["symbol"], tf, round(total_score,4),
++                round(result.get("vfi_flow",0.0),4),
++                round(vfi_scores.get("long",0.0),2),
++                round(vfi_scores.get("short",0.0),2),
++                age_h1, age_m15, exit_reason
++            ])
+@@
+-    def write_signal(self, symbol: str, side: str, reason: str):
++    def write_signal(self, symbol: str, side: str, reason: str, extra: dict=None):
+         path = self.cfg.get("logging", {}).get("signals_path", "signals_log.csv")
+         ensure_header = not os.path.exists(path)
+         with open(path, "a", newline="") as f:
+             w = csv.writer(f)
+             if ensure_header:
+-                w.writerow(["timestamp","symbol","side","reason"])
+-            w.writerow([int(time.time()), symbol, side, reason])
++                w.writerow(["timestamp","symbol","side","reason","vfi_flow","vfi_score_long","vfi_score_short"])
++            vfi = (extra or {}).get("vfi", {})
++            w.writerow([
++                int(time.time()), symbol, side, reason,
++                round(vfi.get("flow",0.0),4),
++                round(vfi.get("long",0.0),2),
++                round(vfi.get("short",0.0),2)
++            ])
+PATCH

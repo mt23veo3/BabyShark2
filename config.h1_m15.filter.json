@@ -1,0 +1,36 @@
+{
+  "weights_sets": {
+    "M15": {
+      "EMA200": 1.0,
+      "Supertrend": 1.2,
+      "MACD": 1.2,
+      "MA50": 1.1,
+      "RSI": 1.0,
+      "ADX": 0.8,
+      "VWAP": 1.3,
+      "Range": 0.6,
+      "Chaikin MF": 0.8,
+      "Volume spike": 1.0
+    },
+    "H1": {
+      "EMA200": 1.6,
+      "Supertrend": 1.4,
+      "MACD": 1.1,
+      "MA50": 0.9,
+      "RSI": 0.8,
+      "ADX": 1.1,
+      "VWAP": 0.6,
+      "Range": 1.3,
+      "Chaikin MF": 1.0,
+      "Volume spike": 0.2
+    }
+  },
+  "thresholds": {
+    "M15": 7.2,
+    "H1": 8.0,
+    "neutral_bump": 0.3
+  },
+  "filter": {
+    "enforce_same_direction": true
+  }
+}

@@ -1,0 +1,531 @@
+
+========== BASIC INFO ==========
+User: root
+Date (UTC): 2025-09-17T07:57:22+00:00
+Host: mt23veo3
+Base dir: /home/mt23veo3/BabyShark
+Service: babysharkbot.service
+
+========== SYSTEMD SERVICE STATUS ==========
+● babysharkbot.service - BabyShark Trading Bot
+     Loaded: loaded (/etc/systemd/system/babysharkbot.service; enabled; preset: enabled)
+    Drop-In: /etc/systemd/system/babysharkbot.service.d
+             └─override.conf
+     Active: active (running) since Wed 2025-09-17 11:36:52 +07; 3h 20min ago
+   Main PID: 522421 (python)
+      Tasks: 4 (limit: 100000)
+     Memory: 200.7M (peak: 243.3M)
+        CPU: 21min 37.068s
+     CGroup: /system.slice/babysharkbot.service
+             └─522421 /home/mt23veo3/BabyShark/.venv/bin/python /home/mt23veo3/BabyShark/main.py
+
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 444 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 384 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 324 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 264 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 204 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 144 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 84 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 24 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 0 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [LOOP] Bắt đầu vòng chạy lúc 2025-09-17T14:29:59+07:00
+
+-- Service properties --
+Restart=on-failure
+ExecMainStartTimestamp=Wed 2025-09-17 11:36:52 +07
+ExecMainPID=522421
+ActiveState=active
+SubState=running
+
+========== JOURNAL (LAST 300 LINES) ==========
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho SHIB/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho BCH/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho LTC/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [SCHEDULE] Vòng tiếp theo sau 750 giây. Next UTC: 2025-09-17T06:45:00+00:00 | Local: 2025-09-17T13:45:00+07:00
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 690 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 630 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 570 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 510 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 450 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 390 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 330 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 270 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 210 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 150 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 90 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 30 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 0 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [LOOP] Bắt đầu vòng chạy lúc 2025-09-17T13:44:59+07:00
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho BTC/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: {'symbol': 'BTC/USDT', 'timeframe': '15m', 'trend_h4': 'UP', 'trend_d1': 'UP', 'note': 'H1 (LONG) không đủ điểm (cần ≥ 13.00).', 'indicators': {'EMA200': 'LONG', 'MA50': 'LONG', 'MACD': 'LONG', 'RSI': 'LONG', 'ADX': 'LONG', 'VWAP': 'LONG', 'Supertrend': 'LONG', 'Range': 'SHORT', 'Chaikin_MF': 'LONG', 'Volume_Spike': '-', 'StochRSI': 'LONG', 'BollingerBands': '-'}, 'signal': 'LONG', 'entry': np.float64(117153.7), 'sl': np.float64(114810.63), 'tp': np.float64(120668.31), 'votes_long': 8, 'votes_short': 1, 'score_long': 13.66, 'score_short': 1.38, 'debug': ['EMA200: LONG', 'MA50: LONG', 'MACD: LONG', 'RSI: LONG', 'ADX: strong trend', 'VWAP: LONG', 'Supertrend: LONG', 'Range: SHORT', 'Chaikin MF: LONG', 'StochRSI: LONG', 'BollingerBands: NEUTRAL'], 'max_holding_candles': 8, 'max_holding_text': '8 nến 15m'}
+Thg 9 17 13:59:59 mt23veo3 python[522421]: H1 (LONG) không đủ điểm (cần ≥ 13.00).
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho ETH/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho BNB/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho SOL/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho ADA/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho XRP/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho DOGE/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho AVAX/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho LINK/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho TRX/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho DOT/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho MATIC/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho SHIB/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho BCH/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho LTC/USDT 15m...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 13:59:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [SCHEDULE] Vòng tiếp theo sau 746 giây. Next UTC: 2025-09-17T07:00:00+00:00 | Local: 2025-09-17T14:00:00+07:00
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 686 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 626 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 566 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 506 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 446 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 386 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 326 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 266 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 206 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 146 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 86 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 26 giây tới lần chạy kế.
+Thg 9 17 13:59:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 0 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [LOOP] Bắt đầu vòng chạy lúc 2025-09-17T13:59:59+07:00
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho BTC/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: {'symbol': 'BTC/USDT', 'timeframe': '15m', 'trend_h4': 'UP', 'trend_d1': 'UP', 'note': 'H1 (LONG) không đủ điểm (cần ≥ 13.00).', 'indicators': {'EMA200': 'LONG', 'MA50': 'LONG', 'MACD': 'LONG', 'RSI': 'LONG', 'ADX': 'LONG', 'VWAP': 'LONG', 'Supertrend': 'LONG', 'Range': 'SHORT', 'Chaikin_MF': 'LONG', 'Volume_Spike': '-', 'StochRSI': 'LONG', 'BollingerBands': '-'}, 'signal': 'LONG', 'entry': np.float64(117228.16), 'sl': np.float64(114883.6), 'tp': np.float64(120745.0), 'votes_long': 8, 'votes_short': 1, 'score_long': 13.66, 'score_short': 1.38, 'debug': ['EMA200: LONG', 'MA50: LONG', 'MACD: LONG', 'RSI: LONG', 'ADX: strong trend', 'VWAP: LONG', 'Supertrend: LONG', 'Range: SHORT', 'Chaikin MF: LONG', 'StochRSI: LONG', 'BollingerBands: NEUTRAL'], 'max_holding_candles': 8, 'max_holding_text': '8 nến 15m'}
+Thg 9 17 14:29:59 mt23veo3 python[522421]: H1 (LONG) không đủ điểm (cần ≥ 13.00).
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho ETH/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho BNB/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho SOL/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho ADA/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho XRP/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho DOGE/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho AVAX/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho LINK/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho TRX/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho DOT/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho MATIC/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho SHIB/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho BCH/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho LTC/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [SCHEDULE] Vòng tiếp theo sau 744 giây. Next UTC: 2025-09-17T07:15:00+00:00 | Local: 2025-09-17T14:15:00+07:00
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 684 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 624 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 564 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 504 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 444 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 384 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 324 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 264 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 204 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 144 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 84 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 24 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 0 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [LOOP] Bắt đầu vòng chạy lúc 2025-09-17T14:14:59+07:00
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho BTC/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: {'symbol': 'BTC/USDT', 'timeframe': '15m', 'trend_h4': 'UP', 'trend_d1': 'UP', 'note': 'H1 (LONG) không đủ điểm (cần ≥ 13.00).', 'indicators': {'EMA200': 'LONG', 'MA50': 'LONG', 'MACD': 'LONG', 'RSI': 'LONG', 'ADX': 'LONG', 'VWAP': 'LONG', 'Supertrend': 'LONG', 'Range': 'SHORT', 'Chaikin_MF': 'LONG', 'Volume_Spike': '-', 'StochRSI': 'LONG', 'BollingerBands': '-'}, 'signal': 'LONG', 'entry': np.float64(117175.35), 'sl': np.float64(114831.84), 'tp': np.float64(120690.61), 'votes_long': 8, 'votes_short': 1, 'score_long': 13.66, 'score_short': 1.38, 'debug': ['EMA200: LONG', 'MA50: LONG', 'MACD: LONG', 'RSI: LONG', 'ADX: strong trend', 'VWAP: LONG', 'Supertrend: LONG', 'Range: SHORT', 'Chaikin MF: LONG', 'StochRSI: LONG', 'BollingerBands: NEUTRAL'], 'max_holding_candles': 8, 'max_holding_text': '8 nến 15m'}
+Thg 9 17 14:29:59 mt23veo3 python[522421]: H1 (LONG) không đủ điểm (cần ≥ 13.00).
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho ETH/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho BNB/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho SOL/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho ADA/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho XRP/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho DOGE/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho AVAX/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho LINK/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho TRX/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho DOT/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho MATIC/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho SHIB/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho BCH/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Đang lấy dữ liệu cho LTC/USDT 15m...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tính toán indicator...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Lấy dữ liệu H1 để làm bộ lọc...
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Tín hiệu: None
+Thg 9 17 14:29:59 mt23veo3 python[522421]: Không có tín hiệu.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [SCHEDULE] Vòng tiếp theo sau 744 giây. Next UTC: 2025-09-17T07:30:00+00:00 | Local: 2025-09-17T14:30:00+07:00
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 684 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 624 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 564 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 504 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 444 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 384 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 324 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 264 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 204 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 144 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 84 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 24 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [HEARTBEAT] Còn 0 giây tới lần chạy kế.
+Thg 9 17 14:29:59 mt23veo3 python[522421]: [LOOP] Bắt đầu vòng chạy lúc 2025-09-17T14:29:59+07:00
+
+========== RESTARTS IN LAST 24H ==========
+537
+Thg 9 16 21:43:59 mt23veo3 systemd[1]: babysharkbot.service: Failed with result 'exit-code'.
+Thg 9 16 21:44:59 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 21:44:59 mt23veo3 systemd[1]: babysharkbot.service: Failed with result 'exit-code'.
+Thg 9 16 21:46:00 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 21:46:00 mt23veo3 systemd[1]: babysharkbot.service: Failed with result 'exit-code'.
+Thg 9 16 21:47:00 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 21:47:00 mt23veo3 systemd[1]: babysharkbot.service: Failed with result 'exit-code'.
+Thg 9 16 21:48:00 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 21:48:00 mt23veo3 systemd[1]: babysharkbot.service: Failed with result 'exit-code'.
+Thg 9 16 21:49:00 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 21:49:00 mt23veo3 systemd[1]: babysharkbot.service: Failed with result 'exit-code'.
+Thg 9 16 21:50:01 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 21:50:01 mt23veo3 systemd[1]: babysharkbot.service: Failed with result 'exit-code'.
+Thg 9 16 21:51:01 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 23:14:19 mt23veo3 systemd[1]: Stopped babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 23:14:19 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 23:34:28 mt23veo3 systemd[1]: Stopped babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 23:34:28 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 09:21:14 mt23veo3 systemd[1]: Stopped babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 09:21:14 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 09:22:46 mt23veo3 systemd[1]: babysharkbot.service: Failed to kill control group /system.slice/babysharkbot.service, ignoring: Invalid argument
+Thg 9 17 09:22:46 mt23veo3 systemd[1]: babysharkbot.service: Failed with result 'timeout'.
+Thg 9 17 09:22:46 mt23veo3 systemd[1]: Stopped babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 09:22:46 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 09:46:42 mt23veo3 systemd[1]: babysharkbot.service: Failed to kill control group /system.slice/babysharkbot.service, ignoring: Invalid argument
+Thg 9 17 09:46:42 mt23veo3 systemd[1]: babysharkbot.service: Failed with result 'timeout'.
+Thg 9 17 09:46:42 mt23veo3 systemd[1]: Stopped babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 09:46:42 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 09:57:41 mt23veo3 systemd[1]: Stopped babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 09:57:41 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 10:21:03 mt23veo3 systemd[1]: Stopped babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 10:21:03 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 10:51:36 mt23veo3 systemd[1]: Stopped babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 10:51:36 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 10:53:13 mt23veo3 systemd[1]: babysharkbot.service: Failed to kill control group /system.slice/babysharkbot.service, ignoring: Invalid argument
+Thg 9 17 10:53:13 mt23veo3 systemd[1]: babysharkbot.service: Failed with result 'timeout'.
+Thg 9 17 10:53:13 mt23veo3 systemd[1]: Stopped babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 10:53:13 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 10:55:45 mt23veo3 systemd[1]: babysharkbot.service: Failed to kill control group /system.slice/babysharkbot.service, ignoring: Invalid argument
+Thg 9 17 10:55:45 mt23veo3 systemd[1]: babysharkbot.service: Failed with result 'timeout'.
+Thg 9 17 10:55:45 mt23veo3 systemd[1]: Stopped babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 10:55:45 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 10:59:27 mt23veo3 systemd[1]: Stopped babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 10:59:27 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 11:35:02 mt23veo3 systemd[1]: Stopped babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 11:35:02 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 11:36:52 mt23veo3 systemd[1]: babysharkbot.service: Failed to kill control group /system.slice/babysharkbot.service, ignoring: Invalid argument
+Thg 9 17 11:36:52 mt23veo3 systemd[1]: babysharkbot.service: Failed with result 'timeout'.
+Thg 9 17 11:36:52 mt23veo3 systemd[1]: Stopped babysharkbot.service - BabyShark Trading Bot.
+Thg 9 17 11:36:52 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+
+========== SYSTEM TIME & NTP ==========
+               Local time: T4 2025-09-17 14:57:23 +07
+           Universal time: T4 2025-09-17 07:57:23 UTC
+                 RTC time: T4 2025-09-17 07:57:23
+                Time zone: Asia/Ho_Chi_Minh (+07, +0700)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+========== RESOURCES SNAPSHOT ==========
+-- uptime --
+ 14:57:23 up 1 day,  5:48,  3 users,  load average: 0,00, 0,05, 0,12
+-- memory --
+               total        used        free      shared  buff/cache   available
+BNhớ:          7,7Gi       1,2Gi       913Mi        77Mi       5,9Gi       6,5Gi
+Tráo đổi:      4,0Gi       256Ki       4,0Gi
+-- disk --
+Hệ thống tập tin    Cỡ  Dùng   Còn %Dùng Gắn vào
+/dev/sda2         109G   25G   79G   24% /
+-- top --
+top - 14:57:23 up 1 day,  5:48,  3 users,  load average: 0,00, 0,05, 0,12
+Tác vụ: 218 tổng,   1 chạy, 217 ngủ,   0 dừng,   0 ma
+%Cpu(s):  0,0 us,  0,0 sy,  0,0 ni, 97,7 id,  0,0 wa,  0,0 hi,  2,3 si,  0,0 st 
+MiB BNhớ :   7840,6 total,    911,5 free,   1222,1 used,   6074,2 buff/cache    
+MiB TĐổi:   4096,0 total,   4095,7 free,      0,2 used.   6618,4 avail BNhớ 
+
+========== PROJECT LAYOUT ==========
+tổng 524
+drwxrwxr-x  4 mt23veo3 mt23veo3   4096 Thg 9  17 14:57 .
+drwxr-x--- 22 mt23veo3 mt23veo3   4096 Thg 9  17 14:55 ..
+-rw-rw-r--  1 mt23veo3 mt23veo3      0 Thg 9  16 10:58 babyshark_health_2025-09-16_1058.txt
+-rw-rw-r--  1 mt23veo3 mt23veo3  34440 Thg 9  16 10:59 babyshark_health_2025-09-16_1059.txt
+-rw-rw-r--  1 mt23veo3 mt23veo3      0 Thg 9  16 21:35 babyshark_health_2025-09-16_2135.txt
+-rw-rw-r--  1 mt23veo3 mt23veo3  34585 Thg 9  17 14:57 babyshark_health_2025-09-17_1457.txt
+-rwxrwxr-x  1 mt23veo3 mt23veo3   6839 Thg 9  16 10:54 babyshark_healthcheck.sh
+-rw-rw-r--  1 mt23veo3 mt23veo3    618 Thg 9  16 13:54 config.h1_m15.filter.json
+-rw-rw-r--  1 mt23veo3 mt23veo3   2190 Thg 9  17 10:53 config.json
+-rw-rw-r--  1 mt23veo3 mt23veo3    410 Thg 9  15 14:06 data.py
+-rw-rw-r--  1 mt23veo3 mt23veo3   7487 Thg 9  17 11:34 discord_bot.py
+-rw-rw-r--  1 mt23veo3 mt23veo3   6742 Thg 9  16 22:42 indicators.py
+-rw-rw-r--  1 mt23veo3 mt23veo3    657 Thg 9  17 14:47 last_signal.json
+-rw-rw-r--  1 mt23veo3 mt23veo3  16317 Thg 9  17 10:20 main.py
+drwxrwxr-x  2 mt23veo3 mt23veo3   4096 Thg 9  17 11:35 __pycache__
+-rw-rw-r--  1 mt23veo3 mt23veo3      0 Thg 9  15 13:16 README.md
+-rw-rw-r--  1 mt23veo3 mt23veo3    566 Thg 9  16 13:54 report_utils.py
+-rw-rw-r--  1 mt23veo3 mt23veo3    534 Thg 9  15 13:27 requirements.txt
+-rw-rw-r--  1 mt23veo3 mt23veo3 352830 Thg 9  17 14:47 signals_log.csv
+-rw-rw-r--  1 mt23veo3 mt23veo3   3556 Thg 9  16 23:02 signals.py
+-rw-rw-r--  1 mt23veo3 mt23veo3    386 Thg 9  15 14:52 signal_state.py
+-rw-rw-r--  1 mt23veo3 mt23veo3   4074 Thg 9  16 13:53 trade_filter.py
+-rw-rw-r--  1 mt23veo3 mt23veo3    692 Thg 9  15 16:09 utils.py
+drwxrwxr-x  5 mt23veo3 mt23veo3   4096 Thg 9  15 13:16 .venv
+-rw-rw-r--  1 mt23veo3 mt23veo3   3293 Thg 9  17 10:50 votes.py
+
+========== PYTHON / VENV / PACKAGES ==========
+Python: Python 3.12.3
+-- key packages --
+Name: ccxt
+Version: 4.5.4
+Name: pandas
+Version: 2.3.2
+Name: numpy
+Version: 2.3.3
+ Name: lapack-lite
+ Name: dragon4
+ Name: libdivide
+ Name: Meson
+ Name: spin
+ Name: tempita
+ Name: OpenBLAS
+ Name: LAPACK
+ Name: GCC runtime library
+ Name: libquadmath
+Name: ta
+Version: 0.11.0
+
+========== CONFIG SUMMARY ==========
+Failed to load config.json: [Errno 21] Is a directory: '.'
+
+========== SIGNALS LOG (LAST 50 LINES) ==========
+2025-09-17T07:01:55.812904,DOT/USDT,15m,,,,,,,,,,False,UP,DOWN,
+2025-09-17T07:02:05.751001,MATIC/USDT,15m,,,,,,,,,,False,DOWN,DOWN,
+2025-09-17T07:02:15.505683,SHIB/USDT,15m,,,,,,,,,,False,UP,DOWN,
+2025-09-17T07:02:25.362871,BCH/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:02:35.140280,LTC/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:15:10.471305,BTC/USDT,15m,LONG,117175.35,114831.84,120690.61,8,1,"EMA200: LONG,MA50: LONG,MACD: LONG,RSI: LONG,ADX: strong trend,VWAP: LONG,Supertrend: LONG,Range: SHORT,Chaikin MF: LONG,StochRSI: LONG,BollingerBands: NEUTRAL",8,8 nến 15m,False,UP,UP,H1 (LONG) không đủ điểm (cần ≥ 13.00).
+2025-09-17T07:15:20.498276,ETH/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:15:30.963608,BNB/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:15:41.537366,SOL/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:15:52.159125,ADA/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:16:02.325529,XRP/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:16:12.786028,DOGE/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:16:22.814102,AVAX/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:16:32.833808,LINK/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:16:42.965168,TRX/USDT,15m,,,,,,,,,,False,DOWN,UP,
+2025-09-17T07:16:53.346917,DOT/USDT,15m,,,,,,,,,,False,UP,DOWN,
+2025-09-17T07:17:03.711090,MATIC/USDT,15m,,,,,,,,,,False,DOWN,DOWN,
+2025-09-17T07:17:13.842243,SHIB/USDT,15m,,,,,,,,,,False,UP,DOWN,
+2025-09-17T07:17:24.572929,BCH/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:17:35.011844,LTC/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:30:09.702934,BTC/USDT,15m,LONG,117233.88,114889.2,120750.9,8,1,"EMA200: LONG,MA50: LONG,MACD: LONG,RSI: LONG,ADX: strong trend,VWAP: LONG,Supertrend: LONG,Range: SHORT,Chaikin MF: LONG,StochRSI: LONG,BollingerBands: NEUTRAL",8,8 nến 15m,False,UP,UP,H1 (LONG) không đủ điểm (cần ≥ 13.00).
+2025-09-17T07:30:19.316632,ETH/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:30:28.888402,BNB/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:30:38.596746,SOL/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:30:49.451848,ADA/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:30:59.403240,XRP/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:31:09.180324,DOGE/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:31:18.965261,AVAX/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:31:28.720765,LINK/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:31:38.786427,TRX/USDT,15m,,,,,,,,,,False,DOWN,UP,
+2025-09-17T07:31:48.858423,DOT/USDT,15m,,,,,,,,,,False,UP,DOWN,
+2025-09-17T07:31:59.003489,MATIC/USDT,15m,,,,,,,,,,False,DOWN,DOWN,
+2025-09-17T07:32:08.469803,SHIB/USDT,15m,,,,,,,,,,False,UP,DOWN,
+2025-09-17T07:32:17.711659,BCH/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:32:26.849631,LTC/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:45:10.757333,BTC/USDT,15m,LONG,117192.94,114849.08,120708.73,8,1,"EMA200: LONG,MA50: LONG,MACD: LONG,RSI: LONG,ADX: strong trend,VWAP: LONG,Supertrend: LONG,Range: SHORT,Chaikin MF: LONG,StochRSI: LONG,BollingerBands: NEUTRAL",8,8 nến 15m,False,UP,UP,H1 (LONG) không đủ điểm (cần ≥ 13.00).
+2025-09-17T07:45:20.540359,ETH/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:45:30.492401,BNB/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:45:40.586774,SOL/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:45:50.473950,ADA/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:46:00.543641,XRP/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:46:10.532804,DOGE/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:46:20.472064,AVAX/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:46:30.555513,LINK/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:46:40.507384,TRX/USDT,15m,,,,,,,,,,False,DOWN,UP,
+2025-09-17T07:46:51.576159,DOT/USDT,15m,,,,,,,,,,False,UP,DOWN,
+2025-09-17T07:47:01.732736,MATIC/USDT,15m,,,,,,,,,,False,DOWN,DOWN,
+2025-09-17T07:47:11.877800,SHIB/USDT,15m,,,,,,,,,,False,UP,DOWN,
+2025-09-17T07:47:21.878092,BCH/USDT,15m,,,,,,,,,,False,UP,UP,
+2025-09-17T07:47:32.122073,LTC/USDT,15m,,,,,,,,,,False,UP,UP,
+
+========== LAST SIGNAL JSON ==========
+{"BTC/USDT_15m": null, "BTC/USDT_1h": null, "ETH/USDT_15m": null, "ETH/USDT_1h": null, "BNB/USDT_15m": null, "BNB/USDT_1h": null, "SOL/USDT_15m": null, "SOL/USDT_1h": null, "ADA/USDT_15m": null, "ADA/USDT_1h": null, "XRP/USDT_15m": null, "XRP/USDT_1h": null, "DOGE/USDT_15m": null, "DOGE/USDT_1h": null, "AVAX/USDT_15m": null, "AVAX/USDT_1h": null, "LINK/USDT_15m": null, "LINK/USDT_1h": null, "TRX/USDT_15m": null, "TRX/USDT_1h": null, "DOT/USDT_15m": null, "DOT/USDT_1h": null, "MATIC/USDT_15m": null, "MATIC/USDT_1h": null, "SHIB/USDT_15m": null, "SHIB/USDT_1h": null, "BCH/USDT_15m": null, "BCH/USDT_1h": null, "LTC/USDT_15m": null, "LTC/USDT_1h": null}
+========== FRESHNESS OF LAST SIGNAL ==========
+Unable to determine last signal timestamp.
+
+Done.

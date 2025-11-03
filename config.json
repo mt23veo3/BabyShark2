@@ -1,0 +1,221 @@
+{
+  "active_profile": "default",
+  "interval_sec": 15,
+
+  "exchange": {
+    "name": "binance",
+    "market": "FUTURES",
+    "load_markets_on_start": true,
+    "rate_limit_safe": true
+  },
+
+  "symbols": [
+    "BTC/USDT",
+    "ETH/USDT",
+    "BNB/USDT",
+    "SOL/USDT",
+    "XRP/USDT",
+    "ADA/USDT",
+    "DOGE/USDT",
+    "TRX/USDT",
+    "LINK/USDT",
+    "AVAX/USDT",
+    "DOT/USDT",
+    "ATOM/USDT",
+    "NEAR/USDT",
+    "LTC/USDT",
+    "POL/USDT",
+    "ARB/USDT",
+    "APT/USDT",
+    "SUI/USDT",
+    "TON/USDT"
+  ],
+
+  "notifier": {
+    "enabled": true,
+    "discord_webhook": "https://discord.com/api/webhooks/1417032780256120903/crK7-rRiqB_FmYwhBaM0pNYq-NCfscUSadM8P7AYRvY303QDR_tmhojNWXQU9YuAdhGm",
+    "username": "BabyShark",
+    "notify_decision": true
+  },
+
+  "features": {
+    "enable_vfi": true
+  },
+
+  "risk": {
+    "min_notional": 5,
+    "reward_ratio": 1.5,
+    "sl_atr_mult": 1.5,
+    "max_concurrent_trades": 5,
+    "risk_per_trade": 0.01,
+    "probe": {
+      "enabled": true,
+      "probe_size_quote": 10,
+      "promote_add_size_quote": 20,
+      "promote_after_mins": 20,
+      "probe_timeout_mins": 45
+    }
+  },
+
+  "execution": {
+    "partial_tp": [
+      { "qty_pct": 0.4, "rr": 1.0 },
+      { "qty_pct": 0.3, "rr": 1.5 },
+      { "qty_pct": 0.3, "rr": 2.0 }
+    ],
+    "trailing": {
+      "enabled": true,
+      "start_rr": 1.0,
+      "trail_frac": 0.5
+    }
+  },
+
+  "voter": {
+    "enable_macro": true,
+    "enable_precision": true,
+    "anti_chase_atr_mult": 1.2,
+    "long_threshold": 0.02,
+    "short_threshold": -0.02,
+    "early_trigger": {
+      "min_score": 0.35,
+      "min_vfi": 60
+    },
+    "late_filter": {
+      "drop_pct": 0.25
+    },
+    "quality_bbw_min": 0.10,
+    "quality_adx_min": 12.0,
+    "quality_rsi_flat": 2.5,
+    "quality_block_bbw": 0.06
+  },
+
+  "vfi": {
+    "enabled": true,
+    "vss_entry": 1.6,
+    "wpi_entry": 60,
+    "wpi_promote": 70,
+    "wpi_promote_with_adx_up": 65,
+    "wick_absorb_thresh": 1.8,
+    "weak_vol_ratio": 1.2,
+    "weak_body_ratio": 0.8,
+    "vp_max_for_weak": 1.2,
+    "vwap_bias_guard": 1.0,
+    "entry": {
+      "m15_max_lag_sec": 900,
+      "h1_grace_sec": 1800
+    },
+    "exit": {
+      "wick_threshold": 0.8,
+      "min_tba": 0.8,
+      "min_vss": 1.0
+    },
+    "sideway_policy": {
+      "forbid_breakout": true,
+      "intensity_threshold": 0.5
+    },
+    "modes": {
+      "sideway": { "m15_threshold_pct": 0.9 },
+      "transition": { "m15_threshold_pct": 0.8 },
+      "normal": { "m15_threshold_pct": 0.85 },
+      "strong": { "m15_threshold_pct": 0.75 }
+    },
+    "wick_absorb_guard": {
+      "enabled": true,
+      "ratio": 1.8,
+      "cool_down_sec": 60
+    }
+  },
+
+  "exit": {
+    "trend_adx_min": 15,
+    "trend_bbw_min": 0.12,
+    "transition_adx_drop": 14
+  },
+
+  "monitor": {
+    "weak_drop_threshold": 0.25
+  },
+
+  "voting": {
+    "group_weights": {
+      "flow": 0.20,
+      "trend": 0.35,
+      "momentum": 0.25,
+      "mean": 0.20
+    }
+  },
+
+  "logging": {
+    "level": "INFO",
+    "errors_path": "run.log",
+    "scores_path": "scores_log.csv",
+    "signals_path": "signals_log.csv",
+    "votes_path": "votes.csv",
+    "trades_log": "trades_log.csv",
+    "cycles_path": "cycles_log.csv",
+    "entries_reason_path": "entries_reason.csv"
+  },
+  "enhance": {
+	"ema_slope":        { "enabled": true,  "lookback": 3, "bonus": 0.02, "penalty": -0.02, "min_bbw": 0.10 },
+	"adx_slope":        { "enabled": true,  "lookback": 3, "delta": 5, "bonus": 0.02, "need_vfi_delta_pos": true },
+	"early_anticipate": { "enabled": true,  "ema_cross_21_50": true, "bonus": 0.04, "cooldown_n": 2, "max_bars": 2,
+							"anti_chase_atr_mult": 1.0, "min_vfi": 55 },
+	"m5_trigger":       { "enabled": true,  "min_gap_secs": 900, "require_m15_ok": true },
+	"lag_guard":        { "enabled": true,  "h1_max_age": 7200, "h4_max_age": 21600, "neutral_if_true": true,"skip_if_vfi_flow_over": 0.2 }
+  },
+  "entry": {
+	"cooldown_secs": 900,
+	"fail_cooldown_secs": 1800,
+	"min_vol_ratio": 0.8,
+	"max_impulse_pct": 0.012,
+
+  "m15": {
+    "min_flow": 0.10,
+    "min_adx": 14.0,
+    "min_bbw": 0.09,
+    "max_vwap_atr": 1.0
+  },
+
+  "m5": {
+    "need_confluence": 2,
+    "min_body_pct": 0.35,
+    "max_wick_ratio": 1.5
+  },
+  "profiles": {
+    "default": {},
+    "trend_follow": {
+      "interval_sec": 60,
+      "voter": { "anti_chase_atr_mult": 1.6, "quality_adx_min": 14 },
+      "voting": { "group_weights": { "flow": 0.25, "trend": 0.45, "momentum": 0.25, "mean": 0.05 } },
+      "execution": { "trailing": { "trail_frac": 0.4 } }
+    },
+    "sideway_mean_revert": {
+      "interval_sec": 60,
+      "vfi": { "sideway_policy": { "forbid_breakout": true, "intensity_threshold": 0.45 } },
+      "voter": { "anti_chase_atr_mult": 0.9, "quality_adx_min": 10 },
+      "voting": { "group_weights": { "flow": 0.15, "trend": 0.15, "momentum": 0.20, "mean": 0.50 } }
+    },
+    "breakout_momentum": {
+      "interval_sec": 30,
+      "voter": { "anti_chase_atr_mult": 1.0, "early_trigger": { "min_score": 0.28, "min_vfi": 50 } },
+      "voting": { "group_weights": { "flow": 0.30, "trend": 0.35, "momentum": 0.30, "mean": 0.05 } }
+    },
+    "news_high_vol": {
+      "interval_sec": 30,
+      "risk": { "reward_ratio": 1.2, "sl_atr_mult": 2.0 },
+      "voter": { "anti_chase_atr_mult": 1.8 },
+      "execution": { "trailing": { "trail_frac": 0.35 } },
+      "vfi": { "exit": { "wick_threshold": 0.7, "min_tba": 0.9, "min_vss": 1.1 } }
+    },
+    "low_liquidity_night": {
+      "interval_sec": 90,
+      "voter": { "anti_chase_atr_mult": 0.8 },
+      "voting": { "group_weights": { "flow": 0.15, "trend": 0.25, "momentum": 0.20, "mean": 0.40 } }
+    },
+    "scalp_fast": {
+      "interval_sec": 20,
+      "voter": { "early_trigger": { "min_score": 0.25, "min_vfi": 48 } },
+      "risk": { "reward_ratio": 1.0, "sl_atr_mult": 1.2 }
+    }
+  }
+}

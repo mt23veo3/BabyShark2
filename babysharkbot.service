@@ -1,0 +1,12 @@
+[Unit]
+Description=BabyShark Autotrade Bot
+After=network-online.target
+
+[Service]
+WorkingDirectory=/opt/babyshark
+ExecStart=/usr/bin/python3 main.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

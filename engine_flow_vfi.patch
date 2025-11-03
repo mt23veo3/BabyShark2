@@ -1,0 +1,57 @@
+cat > engine_flow_vfi.patch <<'PATCH'
+--- a/engine_flow.py
++++ b/engine_flow.py
+@@
+-from votes import tally_groups
+-from order_manager import OrderManager
++from votes import tally_groups
++from order_manager import OrderManager
++from vfi_module import calc_vfi_features, vfi_score, vfi_exit_signal
+@@
+ def run_symbol_cycle(symbol: str, indicators: dict, cfg: dict, state: dict) -> dict:
+@@
+-    # 1) Build scalar snapshot per TF for voting
++    # 1) Build scalar snapshot per TF for voting
+     vote_ind: Dict[str, Dict[str, float]] = {}
+     for tf in ("M5", "M15", "H1", "H4"):
+         src = indicators.get(tf) or {}
+         vote_ind[tf] = {
+             "close":     _last(src, "close", 0.0),
+@@
+-    # 2) Tally votes
++    # 2) Tally votes + VFI FLOW
+     groups = tally_groups(vote_ind, cfg.get("voting", {}))
++
++    # --- VFI FLOW START -----------------------------------------------------
++    enable_vfi = (cfg.get("features", {}).get("enable_vfi", False) or
++                  cfg.get("vfi") is not None)
++    vfi_flow = 0.0
++    vfi_scores = {"long": 0.0, "short": 0.0}
++    if enable_vfi and "M15" in indicators:
++        m15 = indicators["M15"].get("df")
++        if m15 is not None and len(m15) >= 30:
++            feats = calc_vfi_features(
++                m15,
++                vwap=indicators["M15"].get("vwap"),
++                atr=indicators["M15"].get("atr")
++            )
++            sc_long  = vfi_score(feats, "LONG")
++            sc_short = vfi_score(feats, "SHORT")
++            vfi_scores = {"long": sc_long, "short": sc_short}
++            vfi_flow = (sc_long - sc_short) / 100.0
++            groups["flow"] = vfi_flow
++    # --- VFI FLOW END -------------------------------------------------------
+@@
+-    decision = mgv_decide_side(groups) if mgv_decide_side else ("FLAT", 0.0)
++    decision = mgv_decide_side(groups) if mgv_decide_side else ("FLAT", 0.0)
+@@
+-    result = {
++    result = {
+         "symbol": symbol,
+         "groups": groups,
+         "decision": decision,
++        "vfi_scores": vfi_scores,
++        "vfi_flow": vfi_flow
+     }
+     return result
+PATCH

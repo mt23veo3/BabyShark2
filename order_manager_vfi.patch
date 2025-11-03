@@ -1,0 +1,71 @@
+cat > order_manager_vfi.patch <<'PATCH'
+--- a/order_manager.py
++++ b/order_manager.py
+@@
+-from typing import Dict, Any, Optional
++from typing import Dict, Any, Optional
++from vfi_module import calc_vfi_features, vfi_exit_signal
+@@
+ class OrderManager:
+@@
+-    def on_tick(self, symbol: str, indicators: dict, decision: tuple):
++    def on_tick(self, symbol: str, indicators: dict, decision: tuple):
+         """
+         decision = (side, confidence) where side in {"LONG","SHORT","FLAT"}
+         """
+         side, conf = decision
+@@
+-        # existing open/close logic ...
++        # existing open/close logic ...
++
++        # --- VFI EXIT GUARD -------------------------------------------------
++        pos = self.state.get(symbol)
++        if pos and pos.get("is_open"):
++            try:
++                vfi_cfg = (self.cfg.get("vfi") or {}).get("exit", {})
++                wick_th = float(vfi_cfg.get("wick_threshold", 0.8))
++                m15 = indicators.get("M15", {}).get("df")
++                if m15 is not None and len(m15) >= 30:
++                    feats_now = calc_vfi_features(
++                        m15,
++                        vwap=indicators.get("M15", {}).get("vwap"),
++                        atr=indicators.get("M15", {}).get("atr")
++                    )
++                    prev_feats = pos.get("vfi_prev_feats") or {}
++                    exit_reason = vfi_exit_signal(prev_feats, feats_now, pos["side"], wick_th)
++                    pos["vfi_prev_feats"] = feats_now
++                    if exit_reason:
++                        self.log.info(f"[VFI-EXIT] {symbol} {pos['side']} -> reason='{exit_reason}'")
++                        qty = pos.get("qty", 0.0)
++                        reduce_frac = 1.0 if qty <= 0 else 0.5
++                        try:
++                            self._reduce_or_close(symbol, reduce_frac, exit_reason)
++                        except Exception as e:
++                            self.log.error(f"[VFI-EXIT][{symbol}] reduce_or_close error: {e}")
++            except Exception as e:
++                self.log.error(f"[VFI-EXIT][{symbol}] evaluation error: {e}")
++        # --------------------------------------------------------------------
+@@
+     def _reduce_or_close(self, symbol: str, reduce_frac: float, reason: str):
+         """
+-        Reduce position by reduce_frac (0<frac<=1). If frac>=0.99 => close.
++        Reduce position by reduce_frac (0<frac<=1). If frac>=0.99 => close.
++        NOTE: Called by VFI exit guard and by trailing/TP engines.
+         """
+         pos = self.state.get(symbol)
+         if not pos or not pos.get("is_open"):
+             return
+         side = pos["side"]
+@@
+         if reduce_frac >= 0.99:
+             # close position
+             self.broker.close(symbol, side, reason=reason)
+             pos["is_open"] = False
++            pos["vfi_prev_feats"] = None
+         else:
+             # reduce
+             qty_reduce = pos["qty"] * float(reduce_frac)
+             self.broker.reduce(symbol, side, qty_reduce, reason=reason)
+             pos["qty"] -= qty_reduce
++            # keep last feats
+PATCH

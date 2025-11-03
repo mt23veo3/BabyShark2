@@ -1,0 +1,515 @@
+
+========== BASIC INFO ==========
+User: mt23veo3
+Date (UTC): 2025-09-16T03:59:01+00:00
+Host: mt23veo3
+Base dir: /home/mt23veo3/BabyShark
+Service: babysharkbot.service
+
+========== SYSTEMD SERVICE STATUS ==========
+● babysharkbot.service - BabyShark Trading Bot
+     Loaded: loaded (/etc/systemd/system/babysharkbot.service; enabled; preset: enabled)
+     Active: active (running) since Tue 2025-09-16 10:55:08 +07; 3min 59s ago
+   Main PID: 154889 (python)
+      Tasks: 4 (limit: 100000)
+     Memory: 194.5M (peak: 234.6M)
+        CPU: 2min 21.923s
+     CGroup: /system.slice/babysharkbot.service
+             └─154889 /home/mt23veo3/BabyShark/.venv/bin/python /home/mt23veo3/BabyShark/main.py
+
+Thg 9 16 10:55:08 mt23veo3 systemd[1]: babysharkbot.service: Scheduled restart job, restart counter is at 359.
+Thg 9 16 10:55:08 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+
+-- Service properties --
+Restart=always
+ExecMainStartTimestamp=Tue 2025-09-16 10:55:08 +07
+ExecMainPID=154889
+ActiveState=active
+SubState=running
+
+========== JOURNAL (LAST 300 LINES) ==========
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Đang lấy dữ liệu cho LINK/USDT 1h...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tính toán indicator...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tín hiệu: None
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Không có tín hiệu.
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Đang lấy dữ liệu cho TRX/USDT 15m...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tính toán indicator...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tín hiệu: None
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Không có tín hiệu.
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Đang lấy dữ liệu cho TRX/USDT 1h...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tính toán indicator...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tín hiệu: None
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Không có tín hiệu.
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Đang lấy dữ liệu cho DOT/USDT 15m...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tính toán indicator...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tín hiệu: None
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Không có tín hiệu.
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Đang lấy dữ liệu cho DOT/USDT 1h...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tính toán indicator...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tín hiệu: None
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Không có tín hiệu.
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Đang lấy dữ liệu cho MATIC/USDT 15m...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tính toán indicator...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tín hiệu: None
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Không có tín hiệu.
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Đang lấy dữ liệu cho MATIC/USDT 1h...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tính toán indicator...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tín hiệu: None
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Không có tín hiệu.
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Đang lấy dữ liệu cho SHIB/USDT 15m...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tính toán indicator...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tín hiệu: None
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Không có tín hiệu.
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Đang lấy dữ liệu cho SHIB/USDT 1h...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tính toán indicator...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tín hiệu: None
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Không có tín hiệu.
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Đang lấy dữ liệu cho BCH/USDT 15m...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tính toán indicator...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tín hiệu: None
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Không có tín hiệu.
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Đang lấy dữ liệu cho BCH/USDT 1h...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tính toán indicator...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tín hiệu: None
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Không có tín hiệu.
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Đang lấy dữ liệu cho LTC/USDT 15m...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tính toán indicator...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tín hiệu: None
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Không có tín hiệu.
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Đang lấy dữ liệu cho LTC/USDT 1h...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tính toán indicator...
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Tín hiệu: None
+Thg 9 16 10:51:09 mt23veo3 python[143735]: Không có tín hiệu.
+Thg 9 16 10:51:09 mt23veo3 systemd[1]: babysharkbot.service: Deactivated successfully.
+Thg 9 16 10:51:09 mt23veo3 systemd[1]: babysharkbot.service: Consumed 2min 23.012s CPU time.
+Thg 9 16 10:51:14 mt23veo3 systemd[1]: babysharkbot.service: Scheduled restart job, restart counter is at 358.
+Thg 9 16 10:51:14 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho BTC/USDT 15m...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho BTC/USDT 1h...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho ETH/USDT 15m...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho ETH/USDT 1h...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho BNB/USDT 15m...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho BNB/USDT 1h...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho SOL/USDT 15m...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho SOL/USDT 1h...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho ADA/USDT 15m...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho ADA/USDT 1h...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho XRP/USDT 15m...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho XRP/USDT 1h...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho DOGE/USDT 15m...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho DOGE/USDT 1h...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho AVAX/USDT 15m...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho AVAX/USDT 1h...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho LINK/USDT 15m...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho LINK/USDT 1h...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho TRX/USDT 15m...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho TRX/USDT 1h...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho DOT/USDT 15m...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho DOT/USDT 1h...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho MATIC/USDT 15m...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho MATIC/USDT 1h...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho SHIB/USDT 15m...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho SHIB/USDT 1h...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho BCH/USDT 15m...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho BCH/USDT 1h...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho LTC/USDT 15m...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Đang lấy dữ liệu cho LTC/USDT 1h...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tính toán indicator...
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Tín hiệu: None
+Thg 9 16 10:55:02 mt23veo3 python[149483]: Không có tín hiệu.
+Thg 9 16 10:55:03 mt23veo3 systemd[1]: babysharkbot.service: Deactivated successfully.
+Thg 9 16 10:55:03 mt23veo3 systemd[1]: babysharkbot.service: Consumed 2min 21.562s CPU time.
+Thg 9 16 10:55:08 mt23veo3 systemd[1]: babysharkbot.service: Scheduled restart job, restart counter is at 359.
+Thg 9 16 10:55:08 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho BTC/USDT 15m...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho BTC/USDT 1h...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho ETH/USDT 15m...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho ETH/USDT 1h...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho BNB/USDT 15m...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho BNB/USDT 1h...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho SOL/USDT 15m...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho SOL/USDT 1h...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho ADA/USDT 15m...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho ADA/USDT 1h...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho XRP/USDT 15m...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho XRP/USDT 1h...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho DOGE/USDT 15m...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho DOGE/USDT 1h...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho AVAX/USDT 15m...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho AVAX/USDT 1h...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho LINK/USDT 15m...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho LINK/USDT 1h...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho TRX/USDT 15m...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho TRX/USDT 1h...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho DOT/USDT 15m...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho DOT/USDT 1h...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho MATIC/USDT 15m...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho MATIC/USDT 1h...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho SHIB/USDT 15m...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho SHIB/USDT 1h...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho BCH/USDT 15m...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho BCH/USDT 1h...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho LTC/USDT 15m...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Đang lấy dữ liệu cho LTC/USDT 1h...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tính toán indicator...
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Tín hiệu: None
+Thg 9 16 10:59:07 mt23veo3 python[154889]: Không có tín hiệu.
+
+========== RESTARTS IN LAST 24H ==========
+679
+Thg 9 16 10:28:30 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:28:39 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:28:48 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:28:57 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:29:05 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:29:14 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:29:23 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:29:31 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:29:40 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:29:50 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:29:58 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:30:07 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:30:16 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:30:25 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:30:34 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:30:43 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:30:52 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:31:00 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:31:09 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:31:18 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:31:27 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:31:36 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:31:44 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:31:53 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:32:02 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:32:11 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:32:20 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:32:28 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:32:37 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:32:46 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:32:54 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:33:03 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:33:12 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:33:21 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:33:30 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:33:38 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:33:47 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:33:56 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:34:05 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:34:14 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:34:24 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:34:32 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:34:42 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:34:43 mt23veo3 systemd[1]: babysharkbot.service: Failed with result 'exit-code'.
+Thg 9 16 10:34:48 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:39:01 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:43:03 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:47:02 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:51:14 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+Thg 9 16 10:55:08 mt23veo3 systemd[1]: Started babysharkbot.service - BabyShark Trading Bot.
+
+========== SYSTEM TIME & NTP ==========
+               Local time: T3 2025-09-16 10:59:09 +07
+           Universal time: T3 2025-09-16 03:59:09 UTC
+                 RTC time: T3 2025-09-16 03:59:09
+                Time zone: Asia/Ho_Chi_Minh (+07, +0700)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+========== RESOURCES SNAPSHOT ==========
+-- uptime --
+ 10:59:09 up  1:50,  4 users,  load average: 1,05, 0,89, 0,88
+-- memory --
+               total        used        free      shared  buff/cache   available
+BNhớ:          7,7Gi       1,7Gi       4,0Gi        75Mi       2,3Gi       6,0Gi
+Tráo đổi:      4,0Gi          0B       4,0Gi
+-- disk --
+Hệ thống tập tin    Cỡ  Dùng   Còn %Dùng Gắn vào
+/dev/sda2         109G   23G   81G   22% /
+-- top --
+top - 10:59:09 up  1:50,  4 users,  load average: 1,05, 0,89, 0,88
+Tác vụ: 231 tổng,   1 chạy, 230 ngủ,   0 dừng,   0 ma
+%Cpu(s):  4,4 us,  2,2 sy,  0,0 ni, 93,3 id,  0,0 wa,  0,0 hi,  0,0 si,  0,0 st 
+MiB BNhớ :   7840,6 total,   4050,7 free,   1730,3 used,   2390,0 buff/cache    
+MiB TĐổi:   4096,0 total,   4096,0 free,      0,0 used.   6110,3 avail BNhớ 
+
+========== PROJECT LAYOUT ==========
+tổng 236
+drwxrwxr-x  4 mt23veo3 mt23veo3   4096 Thg 9  16 10:59 .
+drwxr-x--- 22 mt23veo3 mt23veo3   4096 Thg 9  16 09:34 ..
+-rw-rw-r--  1 mt23veo3 mt23veo3      0 Thg 9  16 10:58 babyshark_health_2025-09-16_1058.txt
+-rw-rw-r--  1 mt23veo3 mt23veo3  28455 Thg 9  16 10:59 babyshark_health_2025-09-16_1059.txt
+-rwxrwxr-x  1 mt23veo3 mt23veo3   6839 Thg 9  16 10:54 babyshark_healthcheck.sh
+-rw-rw-r--  1 mt23veo3 mt23veo3    973 Thg 9  15 22:06 config.json
+-rw-rw-r--  1 mt23veo3 mt23veo3    410 Thg 9  15 14:06 data.py
+-rw-rw-r--  1 mt23veo3 mt23veo3   4131 Thg 9  15 22:02 discord_bot.py
+-rw-rw-r--  1 mt23veo3 mt23veo3   5391 Thg 9  16 10:34 indicators.py
+-rw-rw-r--  1 mt23veo3 mt23veo3    657 Thg 9  16 10:59 last_signal.json
+-rw-rw-r--  1 mt23veo3 mt23veo3   8752 Thg 9  16 10:36 main.py
+drwxrwxr-x  2 mt23veo3 mt23veo3   4096 Thg 9  16 10:36 __pycache__
+-rw-rw-r--  1 mt23veo3 mt23veo3      0 Thg 9  15 13:16 README.md
+-rw-rw-r--  1 mt23veo3 mt23veo3    534 Thg 9  15 13:27 requirements.txt
+-rw-rw-r--  1 mt23veo3 mt23veo3 126349 Thg 9  16 10:59 signals_log.csv
+-rw-rw-r--  1 mt23veo3 mt23veo3   3202 Thg 9  16 10:35 signals.py
+-rw-rw-r--  1 mt23veo3 mt23veo3    386 Thg 9  15 14:52 signal_state.py
+-rw-rw-r--  1 mt23veo3 mt23veo3    692 Thg 9  15 16:09 utils.py
+drwxrwxr-x  5 mt23veo3 mt23veo3   4096 Thg 9  15 13:16 .venv
+
+========== PYTHON / VENV / PACKAGES ==========
+Python: Python 3.12.3
+-- key packages --
+Name: ccxt
+Version: 4.5.4
+Name: pandas
+Version: 2.3.2
+Name: numpy
+Version: 2.3.3
+ Name: lapack-lite
+ Name: dragon4
+ Name: libdivide
+ Name: Meson
+ Name: spin
+ Name: tempita
+ Name: OpenBLAS
+ Name: LAPACK
+ Name: GCC runtime library
+ Name: libquadmath
+Name: ta
+Version: 0.11.0
+
+========== CONFIG SUMMARY ==========
+Failed to load config.json: [Errno 21] Is a directory: '.'
+
+========== SIGNALS LOG (LAST 50 LINES) ==========
+2025-09-16T03:52:39.480203,XRP/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:52:47.686820,XRP/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:52:55.131626,DOGE/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:53:02.611574,DOGE/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:53:09.985807,AVAX/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:53:17.724007,AVAX/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:53:25.331066,LINK/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:53:32.907718,LINK/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:53:40.305321,TRX/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:53:47.617523,TRX/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:53:55.179501,DOT/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:54:02.403459,DOT/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:54:09.939358,MATIC/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:54:17.489738,MATIC/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:54:25.355070,SHIB/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:54:33.117396,SHIB/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:54:40.494661,BCH/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:54:47.981873,BCH/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:54:55.359385,LTC/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:55:02.863595,LTC/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:55:16.620964,BTC/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:55:25.364140,BTC/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:55:33.454572,ETH/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:55:40.767565,ETH/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:55:48.208799,BNB/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:55:55.736580,BNB/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:56:03.062050,SOL/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:56:10.694920,SOL/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:56:18.229294,ADA/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:56:25.890756,ADA/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:56:33.384269,XRP/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:56:40.891012,XRP/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:56:48.437875,DOGE/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:56:56.457061,DOGE/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:57:05.528021,AVAX/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:57:14.116032,AVAX/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:57:22.463109,LINK/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:57:30.722063,LINK/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:57:38.478641,TRX/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:57:46.782586,TRX/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:57:55.068067,DOT/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:58:03.298374,DOT/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:58:11.108482,MATIC/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:58:19.409281,MATIC/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:58:27.741757,SHIB/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:58:36.139193,SHIB/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:58:44.009739,BCH/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:58:52.035057,BCH/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:58:59.860251,LTC/USDT,15m,,,,,,,,,,False,FLAT,FLAT,
+2025-09-16T03:59:07.901047,LTC/USDT,1h,,,,,,,,,,False,FLAT,FLAT,
+
+========== LAST SIGNAL JSON ==========
+{"BTC/USDT_15m": null, "BTC/USDT_1h": null, "ETH/USDT_15m": null, "ETH/USDT_1h": null, "BNB/USDT_15m": null, "BNB/USDT_1h": null, "SOL/USDT_15m": null, "SOL/USDT_1h": null, "ADA/USDT_15m": null, "ADA/USDT_1h": null, "XRP/USDT_15m": null, "XRP/USDT_1h": null, "DOGE/USDT_15m": null, "DOGE/USDT_1h": null, "AVAX/USDT_15m": null, "AVAX/USDT_1h": null, "LINK/USDT_15m": null, "LINK/USDT_1h": null, "TRX/USDT_15m": null, "TRX/USDT_1h": null, "DOT/USDT_15m": null, "DOT/USDT_1h": null, "MATIC/USDT_15m": null, "MATIC/USDT_1h": null, "SHIB/USDT_15m": null, "SHIB/USDT_1h": null, "BCH/USDT_15m": null, "BCH/USDT_1h": null, "LTC/USDT_15m": null, "LTC/USDT_1h": null}
+========== FRESHNESS OF LAST SIGNAL ==========
+Unable to determine last signal timestamp.
+
+Done.
